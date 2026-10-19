@@ -4,6 +4,6 @@ services:
     container_name: xray
     restart: unless-stopped
     ports:
-      - "443:443/tcp"
-    volumes:
-      - ./config.json:/app/config.json:ro
+      - "1443:443"
+    #volumes:
+     # - ./config.json:/app/config.json:ro
