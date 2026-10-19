@@ -1,0 +1,48 @@
+{
+    "log": {
+        "loglevel": "debug"
+    },
+    "inbounds": [
+        {
+            "listen": "127.0.0.1", 
+            "port": 10808, 
+            "protocol": "socks",
+            "settings": {
+                "udp": true
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "routeOnly": true
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "address": "",
+                "port": 443,
+                "id": "41104127-4a14-4dbe-87e8-dd4fcf0b66ca", // Needs to match server side
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "realitySettings": {
+                    "fingerprint": "chrome", 
+                    "serverName": "www.icloud.com:443", // A website that support TLS1.3 and h2. If your dest is `1.1.1.1:443`, then leave it empty
+                    "publicKey": "uPfvlE9XLGL5o1R4RUXSwUv9sgoCgZHuuVHfLEeWryE", // run `xray x25519` to generate. Public and private keys need to be corresponding.
+                    "spiderX": "9f3a7c1d5e8b2046", // If your dest is `1.1.1.1:443`, then you can fill it with `/dns-query/` or just leave it empty
+                    "shortId": "9f3a7c1d5e8b2046" // Required
+                }
+            },
+            "tag": "proxy"
+        }
+    ]
+}

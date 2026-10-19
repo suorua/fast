@@ -1,0 +1,9 @@
+services:
+  xray:
+    build: .
+    container_name: xray
+    restart: unless-stopped
+    ports:
+      - "443:443/tcp"
+    volumes:
+      - ./config.json:/app/config.json:ro
