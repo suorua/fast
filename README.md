@@ -39,7 +39,7 @@ docker compose up -d #启动容器
 ### 客户端信息
 
 ```bash
-vless://41104127-4a14-4dbe-87e8-dd4fcf0b66ca@0.0.0.0:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.icloud.com&fp=chrome&pbk=uPfvlE9XLGL5o1R4RUXSwUv9sgoCgZHuuVHfLEeWryE&sid=6ba85179e30d4fc2&spx=9f3a7c1d5e8b2046&type=tcp&headerType=none#0.0.0.0
+vless://41104127-4a14-4dbe-87e8-dd4fcf0b66ca@0.0.0.0.0:1443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.icloud.com&fp=chrome&pbk=uPfvlE9XLGL5o1R4RUXSwUv9sgoCgZHuuVHfLEeWryE&sid=9f3a7c1d5e8b2046&spx=9f3a7c1d5e8b2046&type=tcp&headerType=none#0.0.0.0.0
 
 ```
 
