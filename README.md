@@ -31,7 +31,7 @@ git clone https://github.com/suorua/fast.git
 
 ```bash
 cd fast #进入fast目录
-docker compose up #启动容器
+docker compose up -d #启动容器
 ```
 
 
