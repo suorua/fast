@@ -6,6 +6,16 @@
 
 答：因为目前vless+reality协议是最强的抗封锁协议
 
+> [!WARNING]
+>
+> 此项目不适合小白使用。特别那种给个脑残货一样，只会一键脚本的小子。觉得自己很牛逼，到处评价自己认知之外的东西。
+>
+> 不会Docker的脚本小子勿扰。
+>
+> 会Docker的佬，我已经帮写你们写好配置示例了，只需要修改相应 uuid,端口等参数，就变成你属于自己的手搓项目了，你还可以推送到自己的Dockerhub仓库，可以快速迁移，方便自己使用。
+
+
+
 ### 安装环境
 
 > [!NOTE]
@@ -52,8 +62,8 @@ docker logs xray -f --tail 100 #查看最近日志100行并实时刷新
 
 复制lvless链接导入v2rayN，Hiddify，shadowrocket等客户端后，编辑节点，把节点地址 0.0.0.0 替换成你自己的VPS IP
 
-```bash
-vless://41104127-4a14-4dbe-87e8-dd4fcf0b66ca@0.0.0.0.0:1443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.icloud.com&fp=chrome&pbk=uPfvlE9XLGL5o1R4RUXSwUv9sgoCgZHuuVHfLEeWryE&sid=9f3a7c1d5e8b2046&spx=9f3a7c1d5e8b2046&type=tcp&headerType=none#自建节点
+```txt
+vless://41104127-4a14-4dbe-87e8-dd4fcf0b66ca@0.0.0.0.0:1443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.icloud.com&fp=chrome&pbk=uPfvlE9XLGL5o1R4RUXSwUv9sgoCgZHuuVHfLEeWryE&sid=9f3a7c1d5e8b2046&spx=%2F&type=tcp&headerType=none#自建节点
 
 ```
 
