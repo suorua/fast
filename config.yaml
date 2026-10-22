@@ -1,0 +1,25 @@
+proxies:
+  - name: 自建节点（选我）
+    type: vless
+    server: IP
+    port: 1443
+    uuid: 41104127-4a14-4dbe-87e8-dd4fcf0b66ca
+    network: tcp
+    tls: true
+    servername: www.icloud.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: uPfvlE9XLGL5o1R4RUXSwUv9sgoCgZHuuVHfLEeWryE
+      short-id: "9f3a7c1d5e8b2046"
+    udp: true
+
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - 自建节点（选我）
+      - DIRECT
+
+rules:
+  - MATCH,PROXY

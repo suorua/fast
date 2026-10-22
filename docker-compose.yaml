@@ -3,6 +3,8 @@ services:
     build: .
     container_name: xray
     restart: unless-stopped
+    environment:
+      - TZ=Asia/Shanghai
     ports:
       - "1443:443"
     #volumes:
