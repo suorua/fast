@@ -99,15 +99,19 @@ rules:
   - MATCH,PROXY
 ```
 
-##### 你也可以直接下载订阅配置
+##### 你也可以导入订阅配置
 
-Clash Verge 订阅配置下载：
+直接添加订阅地址到Clash Verge，然后选择导入的配置，右键编辑文件，把 server IP 换成你自己的 VPS地址 保存即可
+
+Clash Verge 订阅地址：https://raw.githubusercontent.com/suorua/fast/refs/heads/main/config.yaml
 
 
 
-##### 导入配置到Clash Verge客户端
+##### 你也可以手动导入配置到Clash Verge客户端
 
-打开Clash Verge 订阅选项页，然后把Clash Verge 订阅配置下载到桌面保存，直接拖到订阅选项卡 空白即可。然后右键订阅配置选择编辑节点，把 server: IP 换成自己的VPS IP，打开系统代理。你就成功了
+打开Clash Verge 订阅选项页，然后把Clash Verge 订阅配置保存到桌面，直接拖到订阅选项卡 空白即可。然后右键订阅配置选择编辑文件，把 server: IP 换成自己的VPS IP，打开系统代理。你就成功了
+
+![](https://raw.githubusercontent.com/suorua/fast/refs/heads/main/20261022135518.png)
 
 
 
